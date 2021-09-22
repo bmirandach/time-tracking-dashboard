@@ -1,0 +1,19 @@
+{
+  "name": "time-tracking-dashboard-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss styles/styles.css -o public/styles.css",
+    "prod": "cross-env NODE_ENV=production postcss styles/styles.css -o public/styles.css"
+  },
+  "author": "Brenda Miranda",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.15"
+  }
+}

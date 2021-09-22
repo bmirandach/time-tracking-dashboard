@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::after, *::before {
+  @apply m-0 box-border;
+}
+
+*::selection{
+  @apply bg-very-dark-blue;
+}
+
+.attribution { 
+  @apply text-pale-blue text-center text-sm md:absolute md:bottom-2;
+}
+.attribution a { 
+  @apply text-link hover:text-light-red;
+}
+
+.btn-selected {
+  @apply text-pale-blue;
+}
+
+.card {
+  @apply rounded-2xl bg-no-repeat ; /*  overflow-hidden */
+}
+
+.card-activity {
+  @apply rounded-2xl cursor-pointer transition duration-300 ease-in-out bg-dark-blue hover:bg-hover-blue px-6 py-7 lg:px-7;
+}
+
+.card-activity-header {
+  @apply flex justify-between;
+}
+
+.card-activity-title {
+  @apply font-medium text-lg text-white;
+}
+
+.card-activity-info {
+  @apply flex justify-between items-center md:flex-col md:items-start md:pt-2.5;
+}
+
+.card-activity.background {
+  @apply bg-dark-blue;
+}
+
+.card-person {
+  @apply card bg-dark-blue md:row-span-3 lg:row-span-2;
+}
+
+.card-person-info {
+  @apply bg-blue rounded-2xl p-8 flex md:flex-col lg:pt-9;
+}
+
+.card-person-pic {
+  @apply w-4.5 h-4.5 rounded-full border-3 border-white lg:w-5.1 lg:h-5.1;
+}
+
+.card-person-text {
+  @apply  pl-5 font-light md:pl-0 md:pt-9 md:pb-12;
+}
+
+.card-person-title {
+  @apply text-white text-2xl md:text-3xl lg:leading-tight lg:text-4xl lg:tracking-wide;
+}
+
+.card-work {
+  @apply card pt-10 lg:pt-11 bg-orange bg-work bg-icons-1;
+}
+
+.card-play {
+  @apply card pt-10 lg:pt-11 bg-soft-blue bg-play bg-icons-2;
+}
+
+.card-study {
+  @apply card pt-10 lg:pt-11 bg-light-red bg-study bg-icons-2;
+}
+
+.card-exercise {
+  @apply card pt-10 lg:pt-11 bg-lime-green bg-exercise bg-icons-3;
+}
+
+.card-social {
+  @apply card pt-10 lg:pt-11 bg-violet bg-social bg-icons-4;
+}
+
+.card-self-care {
+  @apply card pt-10 lg:pt-11 bg-soft-orange bg-self-care bg-icons-1;
+}
+
+.container {
+  @apply font-sans min-w-full flex flex-col justify-center items-center bg-very-dark-blue md:h-screen;
+}
+
+.current-hrs {
+  @apply text-hrs text-white font-light lg:text-hrs-lg;
+}
+
+.grid-container {
+  @apply grid grid-flow-row grid-cols-1 mx-5 my-20 sm:mx-auto gap-5 sm:max-w-screen-sm md:grid-rows-3 md:grid-cols-3 lg:grid-rows-2 lg:grid-cols-4 lg:max-w-desktop lg:gap-7; /* grid-rows-7 */
+}
+
+.time-frame-btn {
+  @apply hover:text-pale-blue;
+}
+
+.time-frame-list {
+  @apply text-desaturated-blue flex justify-between px-8 py-7 text-lg md:flex-col md:gap-y-3;
+}
+
+.options-btn:hover .ellipsis{
+  fill: white;
+}
+

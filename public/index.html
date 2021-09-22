@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="grid-container">
+        <div class="card-person">
+          <div class="card-person-info">
+            <img class="card-person-pic" src="./images/image-jeremy.png" alt="">
+            <div class="card-person-text">
+              <p class="text-pale-blue">Report for</p>
+              <h1 class="card-person-title">Jeremy Robson</h1>
+            </div>
+          </div>
+          <ul class="time-frame-list">
+            <li><button class="time-frame-btn" value="daily">Daily</button></li>
+            <li><button class="time-frame-btn btn-selected" value="weekly">Weekly</button></li>
+            <li><button class="time-frame-btn" value="monthly">Monthly</button></li>
+          </ul>
+        </div>
+        <div class="card-work ">
+          <div class="card-activity">
+            <div class="card-activity-header">
+              <h2 class="card-activity-title">Work</h2>
+              <button class="options-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="5">
+                  <path class="ellipsis"
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-activity-info">
+              <div class="current-hrs" id="hrs-work"></div>
+              <p class="text-pale-blue" id="prev-work"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card-play">
+          <div class="card-activity">
+            <div class="card-activity-header">
+              <h2 class="card-activity-title">Play</h2>
+              <button class="options-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="5">
+                  <path class="ellipsis"
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-activity-info">
+              <div class="current-hrs" id="hrs-play"></div>
+              <p class="text-pale-blue" id="prev-play"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card-study">
+          <div class="card-activity">
+            <div class="card-activity-header">
+              <h2 class="card-activity-title">Study</h2>
+              <button class="options-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="5">
+                  <path class="ellipsis"
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-activity-info">
+              <div class="current-hrs" id="hrs-study"></div>
+              <p class="text-pale-blue" id="prev-study"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card-exercise">
+          <div class="card-activity">
+            <div class="card-activity-header">
+              <h2 class="card-activity-title">Exercise</h2>
+              <button class="options-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="5">
+                  <path class="ellipsis"
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-activity-info">
+              <div class="current-hrs" id="hrs-exercise"></div>
+              <p class="text-pale-blue" id="prev-exercise"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card-social">
+          <div class="card-activity">
+            <div class="card-activity-header">
+              <h2 class="card-activity-title">Social</h2>
+              <button class="options-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="5">
+                  <path class="ellipsis"
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-activity-info">
+              <div class="current-hrs" id="hrs-social"></div>
+              <p class="text-pale-blue" id="prev-social"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card-self-care">
+          <div class="card-activity">
+            <div class="card-activity-header">
+              <h2 class="card-activity-title">Self Care</h2>
+              <button class="options-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="5">
+                  <path class="ellipsis"
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-activity-info">
+              <div class="current-hrs" id="hrs-selfcare"></div>
+              <p class="text-pale-blue" id="prev-selfcare"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/bmirandach">Brenda Miranda</a>.
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+  <script src="data.json"></script>
+</body>
+</html>
