@@ -49,13 +49,13 @@ module.exports = {
       'link': 'hsl(228, 45%, 44%)', //attribution
     },
     backgroundImage: theme => ({
-      'work': "url('../public/images/icon-work.svg')",
-      'play': "url('../public/images/icon-play.svg')",
-      'study': "url('../public/images/icon-study.svg')",
-      'exercise': "url('../public/images/icon-exercise.svg')",
-      'social': "url('../public/images/icon-social.svg')",
-      'self-care': "url('../public/images/icon-self-care.svg')",
-      'ellipsis': "url('../public/images/icon-ellipsis.svg')",
+      'work': "url('../images/icon-work.svg')",
+      'play': "url('../images/icon-play.svg')",
+      'study': "url('../images/icon-study.svg')",
+      'exercise': "url('../images/icon-exercise.svg')",
+      'social': "url('../images/icon-social.svg')",
+      'self-care': "url('../images/icon-self-care.svg')",
+      'ellipsis': "url('../images/icon-ellipsis.svg')",
     })
   },
   

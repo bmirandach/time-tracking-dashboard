@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/bmirandach/time-tracking-dashboard](https://github.com/bmirandach/time-tracking-dashboard)
-- Live Site URL: [https://bmirandach.github.io/time-tracking-dashboard](https://bmirandach.github.io/time-tracking-dashboard/)
+- Live Site URL: [https://time-tracking-dashboard-alpha.vercel.app/](https://time-tracking-dashboard-alpha.vercel.app/)
 
 ## My process
 
@@ -45,7 +45,7 @@ Users should be able to:
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
 - Javascript
 - Fetch API
-- PostCSS
+- [PostCSS](https://postcss.org/)
 
 ### What I learned and thoughts
 
